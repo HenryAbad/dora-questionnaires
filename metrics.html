@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Métricas DORA — Quick Check</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">DORA</span>
+        <span class="logo-sub">DevOps Assessment</span>
+      </a>
+      <nav class="nav">
+        <a href="metrics.html" class="active">Métricas</a>
+        <a href="capabilities.html">Capacidades</a>
+        <a href="report.html">Reportes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="survey-page">
+    <div class="container">
+      <div class="survey-header">
+        <h1>Cuestionario de Métricas DORA</h1>
+        <p>
+          Responde las 5 preguntas del <a href="https://dora.dev/quickcheck/" target="_blank" rel="noopener">DORA Quick Check</a>
+          para la aplicación o servicio principal en el que trabajas. Basado en la investigación
+          <a href="https://dora.dev/guides/dora-metrics/" target="_blank" rel="noopener">DORA 2024–2025</a>.
+          También disponible en
+          <a href="excel/Cuestionario_Metricas_DORA.xlsx" download>Excel con combos desplegables</a>.
+        </p>
+        <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+      </div>
+
+      <form id="metrics-form" novalidate>
+        <!-- Questions injected by JS -->
+      </form>
+
+      <p class="error-msg" id="form-error">Por favor responde todas las preguntas antes de enviar.</p>
+      <p class="save-status" id="save-status" role="status" aria-live="polite"></p>
+
+      <div class="form-actions">
+        <button type="submit" form="metrics-form" class="btn btn-primary">Guardar y ver resultados</button>
+        <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+      </div>
+
+      <div class="results-panel" id="results">
+        <h2>Resultados de tu evaluación</h2>
+        <div class="result-meta" id="result-meta"></div>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+          Puntuación normalizada (0–10) basada en benchmarks de la investigación DORA.
+          Estas categorías son orientativas para iniciar conversaciones en tu equipo.
+        </p>
+        <div class="results-grid" id="results-grid"></div>
+        <div id="composite-scores"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Referencia: <a href="https://dora.dev/guides/dora-metrics/" target="_blank" rel="noopener">Métricas de rendimiento DORA</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/applications.js"></script>
+  <script src="js/save-api.js"></script>
+  <script src="js/metrics.js"></script>
+</body>
+</html>

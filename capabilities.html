@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capacidades DORA Core — Cuestionario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">DORA</span>
+        <span class="logo-sub">DevOps Assessment</span>
+      </a>
+      <nav class="nav">
+        <a href="metrics.html">Métricas</a>
+        <a href="capabilities.html" class="active">Capacidades</a>
+        <a href="report.html">Reportes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="survey-page">
+    <div class="container">
+      <div class="survey-header">
+        <h1>Cuestionario de Capacidades DORA Core</h1>
+        <p>
+          Evalúa las capacidades técnicas y culturales del
+          <a href="https://dora.dev/core/" target="_blank" rel="noopener">modelo DORA Core</a>.
+          Cada afirmación proviene de las encuestas oficiales DORA
+          (<a href="https://dora.dev/research/2022/questions/" target="_blank" rel="noopener">2022</a>,
+          <a href="https://dora.dev/research/2025/questions/" target="_blank" rel="noopener">2025</a>)
+          con escala Likert: Totalmente en desacuerdo → Totalmente de acuerdo.
+          Completa primero tu nombre y la aplicación, luego responde las afirmaciones de cada capacidad.
+          También disponible en
+          <a href="excel/Cuestionario_Capacidades_DORA.xlsx" download>Excel con combos desplegables</a>.
+        </p>
+        <div class="progress-bar"><div class="progress-fill" id="progress"></div></div>
+      </div>
+
+      <form id="capabilities-form" novalidate>
+        <section class="participant-block" data-section="participant">
+          <h2>Datos del evaluador</h2>
+          <p>Identifica quién responde y sobre qué aplicación se realiza la evaluación de capacidades.</p>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="participant-name">Nombre completo</label>
+              <input type="text" id="participant-name" name="participant_name" placeholder="Ej. María García" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="application-select">Aplicación / Servicio</label>
+              <select id="application-select" name="application" required>
+                <option value="">— Selecciona una aplicación —</option>
+                <option value="portal-web">Portal Web Corporativo</option>
+                <option value="app-mobile-banking">App Mobile Banking</option>
+                <option value="api-pagos">API Gateway Pagos</option>
+                <option value="crm-clientes">Sistema CRM Clientes</option>
+                <option value="ecommerce">Plataforma E-commerce</option>
+                <option value="auth-service">Microservicio Autenticación</option>
+                <option value="analytics">Dashboard Analytics</option>
+                <option value="core-transaccional">Sistema Core Transaccional</option>
+                <option value="app-rrhh">App Interna RRHH</option>
+                <option value="notificaciones">Servicio Notificaciones</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <div id="capabilities-questions">
+          <!-- Capacidades DORA inyectadas por JS -->
+        </div>
+      </form>
+
+      <p class="error-msg" id="form-error">Por favor responde todas las afirmaciones antes de enviar.</p>
+      <p class="save-status" id="save-status" role="status" aria-live="polite"></p>
+
+      <div class="form-actions">
+        <button type="submit" form="capabilities-form" class="btn btn-primary">Guardar y ver resultados</button>
+        <a href="index.html" class="btn btn-secondary">Volver al inicio</a>
+      </div>
+
+      <div class="results-panel" id="results">
+        <h2>Resultados de capacidades</h2>
+        <div class="result-meta" id="result-meta"></div>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+          Puntuación promedio por capacidad (1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo).
+          Usa los resultados para identificar fortalezas y priorizar mejoras en tu equipo.
+        </p>
+        <div id="overall-score"></div>
+        <h3 style="font-size:1rem;margin:1.5rem 0 1rem;">Detalle por capacidad</h3>
+        <div class="capability-scores" id="capability-scores"></div>
+        <div id="insights"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Referencia: <a href="https://dora.dev/capabilities/" target="_blank" rel="noopener">Catálogo de capacidades DORA</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/applications.js"></script>
+  <script src="js/save-api.js"></script>
+  <script src="js/capabilities.js"></script>
+</body>
+</html>

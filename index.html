@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DORA DevOps — Cuestionarios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">DORA</span>
+        <span class="logo-sub">DevOps Assessment</span>
+      </a>
+      <nav class="nav">
+        <a href="metrics.html">Métricas</a>
+        <a href="capabilities.html">Capacidades</a>
+        <a href="report.html">Reportes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <p class="eyebrow">Basado en la investigación de <a href="https://dora.dev" target="_blank" rel="noopener">dora.dev</a></p>
+      <h1>Evalúa el rendimiento de entrega de software de tu equipo</h1>
+      <p class="lead">
+        Dos cuestionarios inspirados en el <strong>DORA Quick Check</strong> y el modelo
+        <strong>DORA Core</strong> para medir métricas de rendimiento y capacidades técnicas
+        que impulsan la excelencia en DevOps.
+      </p>
+
+      <div class="cards">
+        <a href="metrics.html" class="card">
+          <span class="card-badge throughput">Throughput &amp; Estabilidad</span>
+          <h2>Cuestionario de Métricas DORA</h2>
+          <p>Las 5 métricas oficiales de rendimiento en entrega de software:</p>
+          <ul>
+            <li>Change lead time</li>
+            <li>Deployment frequency</li>
+            <li>Failed deployment recovery time</li>
+            <li>Change fail rate</li>
+            <li>Deployment rework rate</li>
+          </ul>
+          <span class="card-cta">Comenzar evaluación →</span>
+        </a>
+
+        <a href="capabilities.html" class="card">
+          <span class="card-badge core">DORA Core</span>
+          <h2>Cuestionario de Capacidades</h2>
+          <p>Evalúa las capacidades técnicas y culturales del modelo DORA Core con escala Likert:</p>
+          <ul>
+            <li>Code maintainability</li>
+            <li>Continuous delivery &amp; integration</li>
+            <li>Test automation</li>
+            <li>Monitoring &amp; observability</li>
+            <li>Y más capacidades core…</li>
+          </ul>
+          <span class="card-cta">Comenzar evaluación →</span>
+        </a>
+
+        <a href="report.html" class="card">
+          <span class="card-badge report">Reportes</span>
+          <h2>Reporte por aplicación</h2>
+          <p>Consulta el promedio de respuestas agrupadas por aplicación o servicio:</p>
+          <ul>
+            <li>Promedio de métricas DORA (0–10)</li>
+            <li>Promedio de capacidades (1–5)</li>
+            <li>Desglose por métrica y capacidad</li>
+            <li>Historial de respuestas recientes</li>
+          </ul>
+          <span class="card-cta">Ver reportes →</span>
+        </a>
+      </div>
+
+      <aside class="notice">
+        <p>
+          <strong>Almacenamiento:</strong> Al desplegar en Vercel con
+          <code>DATABASE_URL</code> (Neon PostgreSQL), las respuestas se guardan de forma segura
+          para generar reportes por aplicación. En desarrollo local usa
+          <code>npx vercel dev</code> para activar la API.
+        </p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Referencia: <a href="https://dora.dev" target="_blank" rel="noopener">DORA Research Program</a>
+        · <a href="https://dora.dev/guides/dora-metrics/" target="_blank" rel="noopener">Métricas DORA</a>
+        · <a href="https://dora.dev/capabilities/" target="_blank" rel="noopener">Catálogo de capacidades</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

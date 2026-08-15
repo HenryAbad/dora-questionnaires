@@ -1,0 +1,216 @@
+[
+  {
+    "id": "code_maintainability",
+    "nameEs": "Mantenibilidad del código",
+    "source": "DORA Capabilities Research",
+    "statements": [
+      "Es fácil para el equipo encontrar ejemplos en el código base, reutilizar código de otros y modificar código mantenido por otros equipos si es necesario.",
+      "Es fácil para el equipo agregar nuevas dependencias a su proyecto y migrar a una nueva versión de una dependencia.",
+      "Las dependencias del equipo son estables y rara vez rompen el código."
+    ]
+  },
+  {
+    "id": "continuous_delivery",
+    "nameEs": "Entrega continua",
+    "source": "DORA Research 2022 — Continuous Delivery",
+    "statements": [
+      "El feedback rápido sobre la calidad y desplegabilidad del sistema está disponible para cualquier persona del equipo.",
+      "Mi equipo prioriza mantener el software desplegable por encima de trabajar en nuevas funcionalidades.",
+      "Nuestro software se mantiene en un estado desplegable a lo largo de todo su ciclo de vida.",
+      "Podemos desplegar nuestro sistema a producción, o a los usuarios finales, en cualquier momento y bajo demanda.",
+      "Cuando las personas reciben feedback de que el sistema no es desplegable (como builds o tests fallidos), priorizan arreglar esos problemas."
+    ]
+  },
+  {
+    "id": "continuous_integration",
+    "nameEs": "Integración continua",
+    "source": "DORA Research 2022 — Continuous Integration",
+    "statements": [
+      "Los builds y tests automatizados se ejecutan con éxito todos los días.",
+      "Los fallos en tests automatizados bloquearán el avance de un commit en el pipeline.",
+      "Los commits de código activan una serie de tests automatizados.",
+      "Los commits de código resultan en un build automatizado del software."
+    ]
+  },
+  {
+    "id": "database_change_management",
+    "nameEs": "Gestión de cambios en base de datos",
+    "source": "DORA Capabilities Research",
+    "statements": [
+      "Todos los cambios de base de datos se almacenan en control de versiones junto con el código de aplicación.",
+      "Existe una herramienta que registra qué cambios de base de datos se han ejecutado en cada entorno.",
+      "Los cambios de esquema de base de datos se prueban contra datos similares a producción antes del despliegue."
+    ]
+  },
+  {
+    "id": "deployment_automation",
+    "nameEs": "Automatización de despliegues",
+    "source": "DORA Capabilities Research",
+    "statements": [
+      "Cualquier persona con las credenciales necesarias puede desplegar cualquier versión a cualquier entorno de forma totalmente automatizada.",
+      "Utilizamos el mismo proceso de despliegue para todos los entornos, incluida producción.",
+      "Utilizamos los mismos paquetes para todos los entornos, manteniendo la configuración específica separada."
+    ]
+  },
+  {
+    "id": "documentation_quality",
+    "nameEs": "Calidad de documentación",
+    "source": "DORA Research 2022 — Documentation",
+    "statements": [
+      "Puedo confiar en nuestra documentación técnica cuando necesito usar o trabajar con los servicios o aplicaciones en los que trabajo.",
+      "Es fácil para mí entender nuestra documentación técnica.",
+      "Es fácil encontrar el documento técnico correcto cuando necesito entender algo sobre los servicios o aplicaciones en los que trabajo.",
+      "La mayor parte del código de los servicios o aplicaciones con los que trabajo está documentado.",
+      "Nuestra documentación técnica está bien organizada.",
+      "La documentación técnica se actualiza cuando se realizan cambios.",
+      "La documentación técnica refleja correctamente las capacidades y requisitos del servicio o aplicación principal en el que trabajo.",
+      "Cuando hay un incidente o problema que requiere troubleshooting, recurro a la documentación."
+    ]
+  },
+  {
+    "id": "empowering_teams",
+    "nameEs": "Empoderar equipos para elegir herramientas",
+    "source": "DORA Capabilities Research",
+    "statements": [
+      "Nuestro equipo puede seleccionar herramientas que mejor se adapten a sus necesidades dentro de directrices organizacionales.",
+      "Se nos anima a experimentar con nuevas herramientas y compartir aprendizajes con otros equipos.",
+      "Existe un proceso documentado para evaluar y adoptar nuevas tecnologías fuera del conjunto base de herramientas."
+    ]
+  },
+  {
+    "id": "flexible_infrastructure",
+    "nameEs": "Infraestructura flexible",
+    "source": "DORA Research 2022 — Cloud Computing",
+    "statements": [
+      "Puedo aumentar o disminuir dinámicamente los recursos en la nube disponibles para el servicio o producto que principalmente soporto según la demanda.",
+      "Puedo monitorear o controlar la cantidad y/o el costo de los recursos en la nube utilizados por el servicio o producto que principalmente soporto.",
+      "Una vez que tengo acceso, puedo aprovisionar y configurar de forma independiente los recursos y capacidades en la nube requeridos para mi producto o servicio bajo demanda, sin crear tickets ni requerir interacción humana.",
+      "La nube en la que corre mi producto o servicio atiende a múltiples equipos y aplicaciones, con recursos de cómputo e infraestructura asignados y reasignados dinámicamente según la demanda."
+    ]
+  },
+  {
+    "id": "generative_culture",
+    "nameEs": "Cultura organizacional generativa",
+    "source": "DORA Research 2022 — Generative Organizational Culture",
+    "statements": [
+      "La colaboración entre funciones (cross-functional) es alentada y recompensada.",
+      "Los fallos se tratan principalmente como oportunidades para mejorar el sistema.",
+      "La información se busca activamente.",
+      "A los mensajeros no se les castiga cuando entregan noticias de fallos u otras malas noticias.",
+      "Las nuevas ideas son bienvenidas.",
+      "Las responsabilidades se comparten."
+    ]
+  },
+  {
+    "id": "job_satisfaction",
+    "nameEs": "Satisfacción laboral",
+    "source": "DORA Capabilities Research",
+    "statements": [
+      "Tengo las herramientas y recursos necesarios para realizar mi trabajo de forma efectiva.",
+      "Mi criterio y experiencia son valorados al tomar decisiones técnicas.",
+      "Es probable que recomiende a mi equipo como un buen lugar para trabajar a un amigo o colega."
+    ]
+  },
+  {
+    "id": "loosely_coupled_teams",
+    "nameEs": "Equipos débilmente acoplados",
+    "source": "DORA Research 2022 — Architecture",
+    "statements": [
+      "Mi equipo puede desplegar y liberar nuestro producto o servicio bajo demanda, de forma independiente de otros servicios de los que dependemos.",
+      "En mi equipo, podemos hacer cambios de gran escala en el diseño de nuestro sistema sin crear trabajo significativo para otros equipos.",
+      "En mi equipo, podemos hacer cambios de gran escala en el diseño de nuestro sistema sin depender de que otros equipos hagan cambios en sus sistemas.",
+      "En mi equipo, realizamos despliegues durante el horario laboral normal con tiempo de inactividad insignificante.",
+      "Para completar mi propio trabajo, no necesito comunicarme y coordinarme con personas fuera de mi equipo.",
+      "Podemos realizar la mayor parte de nuestras pruebas bajo demanda, sin requerir un entorno de pruebas integrado."
+    ]
+  },
+  {
+    "id": "monitoring_observability",
+    "nameEs": "Monitoreo y observabilidad",
+    "source": "DORA Research 2022 — Reliability",
+    "statements": [
+      "Sé cuál fue la confiabilidad real en el periodo más reciente.",
+      "Tiene objetivos de confiabilidad bien definidos (como SLAs/SLOs) que se comunican claramente entre el equipo y a los clientes.",
+      "Mi equipo revisa y ajusta regularmente los objetivos de confiabilidad basándose en evidencia.",
+      "Se realizan revisiones de confiabilidad durante todo el proceso de desarrollo para todas las funcionalidades principales de las aplicaciones en las que trabajo.",
+      "Cuando no cumplimos nuestros objetivos de confiabilidad, realizamos trabajo de mejora y/o re-priorizamos."
+    ]
+  },
+  {
+    "id": "pervasive_security",
+    "nameEs": "Seguridad integrada",
+    "source": "DORA Research 2022 — Security",
+    "statements": [
+      "En mi empresa, el protocolo de seguridad de software está integrado de forma transparente en nuestro proceso de desarrollo.",
+      "En mi empresa, tenemos un proceso estandarizado para abordar la seguridad de software en todos los proyectos.",
+      "Tengo acceso a las herramientas necesarias para ejecutar pruebas de seguridad.",
+      "Se realiza revisión de seguridad para todas las funcionalidades principales de las aplicaciones en las que trabajo.",
+      "Los roles de seguridad están integrados en nuestro equipo de desarrollo de software.",
+      "Las pruebas de seguridad se ejecutan temprano en el proceso de desarrollo de software, ya sea por mí o por otro equipo."
+    ]
+  },
+  {
+    "id": "streamlining_approval",
+    "nameEs": "Agilizar aprobación de cambios",
+    "source": "DORA Capabilities Research",
+    "statements": [
+      "Los cambios se aprueban mediante revisiones entre pares durante el desarrollo, en lugar de procesos de aprobación externos extensos.",
+      "Las pruebas automatizadas y la integración continua detectan cambios defectuosos temprano en el ciclo de vida.",
+      "Podemos implementar mejoras menores sin pasar por procesos burocráticos prolongados de aprobación de cambios."
+    ]
+  },
+  {
+    "id": "test_automation",
+    "nameEs": "Automatización de pruebas",
+    "source": "DORA Research 2025 — Test Automation",
+    "statements": [
+      "Los fallos en tests automatizados suelen indicar un defecto real.",
+      "Puedo obtener feedback de los tests automatizados en menos de diez minutos.",
+      "Es fácil para los desarrolladores reproducir fallos de tests.",
+      "Tenemos los datos de prueba necesarios para ejecutar nuestros tests automatizados fácilmente en cada etapa.",
+      "Cuando las personas reciben feedback de que el sistema no es desplegable (como builds o tests fallidos), priorizan arreglar esos problemas.",
+      "Cuando los tests automatizados pasan, confío en que el software es desplegable."
+    ]
+  },
+  {
+    "id": "test_data_management",
+    "nameEs": "Gestión de datos de prueba",
+    "source": "DORA Research 2025 — Test Automation",
+    "statements": [
+      "Tenemos los datos de prueba necesarios para ejecutar nuestros tests automatizados fácilmente en cada etapa.",
+      "Los tests pueden ejecutarse de forma independiente y repetible sin depender de estado compartido mutable.",
+      "Los datos de prueba se gestionan de forma que los tests automatizados puedan crear y limpiar sus propios datos."
+    ]
+  },
+  {
+    "id": "version_control",
+    "nameEs": "Control de versiones",
+    "source": "DORA Research 2022 — Version Control",
+    "statements": [
+      "Nuestro código de aplicación está en un sistema de control de versiones.",
+      "Las configuraciones de nuestra aplicación están en un sistema de control de versiones.",
+      "Nuestros scripts para automatizar build y configuración están en un sistema de control de versiones.",
+      "Las configuraciones de nuestro sistema están en un sistema de control de versiones."
+    ]
+  },
+  {
+    "id": "well_being",
+    "nameEs": "Bienestar",
+    "source": "DORA Capabilities Research — Well-being",
+    "statements": [
+      "Desplegar a producción no genera ansiedad significativa en nuestro equipo.",
+      "Dedicamos más tiempo a trabajo proactivo que a retrabajo reactivo e imprevisto.",
+      "Las interrupciones y el trabajo no planificado representan una porción menor de nuestro tiempo total de trabajo."
+    ]
+  },
+  {
+    "id": "working_small_batches",
+    "nameEs": "Trabajo en lotes pequeños",
+    "source": "DORA Research 2022 — Trunk-Based Development",
+    "statements": [
+      "Todos los desarrolladores de mi equipo envían código al trunk / rama main al menos una vez al día.",
+      "Las ramas y forks tienen tiempos de vida muy cortos (menos de un día) antes de fusionarse con la rama principal.",
+      "Hay menos de tres ramas activas en el repositorio de código de la aplicación."
+    ]
+  }
+]

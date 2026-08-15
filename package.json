@@ -1,0 +1,17 @@
+{
+  "name": "dora-questionnaires",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cuestionarios DORA DevOps con persistencia en Neon",
+  "scripts": {
+    "generate:excel": "node scripts/generate-metrics-excel.js",
+    "generate:excel:capabilities": "node scripts/generate-capabilities-excel.js",
+    "generate:excel:all": "npm run generate:excel && npm run generate:excel:capabilities"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4"
+  },
+  "devDependencies": {
+    "exceljs": "^4.4.0"
+  }
+}

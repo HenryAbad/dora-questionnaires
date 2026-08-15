@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte por aplicación — DORA DevOps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">DORA</span>
+        <span class="logo-sub">DevOps Assessment</span>
+      </a>
+      <nav class="nav">
+        <a href="metrics.html">Métricas</a>
+        <a href="capabilities.html">Capacidades</a>
+        <a href="report.html" class="active">Reportes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="survey-page report-page">
+    <div class="container">
+      <div class="survey-header">
+        <h1>Reporte por aplicación</h1>
+        <p>
+          Promedio de respuestas agrupadas por aplicación. Los datos provienen de los cuestionarios
+          de métricas (escala 0–10) y capacidades (escala 1–5) guardados en Neon PostgreSQL.
+        </p>
+      </div>
+
+      <div class="report-toolbar">
+        <div class="form-field report-filter">
+          <label for="app-filter">Filtrar por aplicación</label>
+          <select id="app-filter">
+            <option value="">Todas las aplicaciones</option>
+          </select>
+        </div>
+        <button type="button" class="btn btn-primary" id="refresh-btn">Actualizar reporte</button>
+      </div>
+
+      <p class="save-status" id="report-status" role="status" aria-live="polite"></p>
+
+      <div class="report-summary" id="report-summary"></div>
+
+      <div id="report-apps"></div>
+
+      <section class="report-recent" id="report-recent">
+        <h2>Respuestas recientes</h2>
+        <div class="report-table-wrap">
+          <table class="report-table" id="recent-table">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Participante</th>
+                <th>Aplicación</th>
+                <th>Tipo</th>
+                <th>Promedio</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Referencia: <a href="https://dora.dev" target="_blank" rel="noopener">DORA Research Program</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/applications.js"></script>
+  <script src="js/report.js"></script>
+</body>
+</html>
