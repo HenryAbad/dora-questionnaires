@@ -17,8 +17,7 @@
       "El feedback rápido sobre la calidad y desplegabilidad del sistema está disponible para cualquier persona del equipo.",
       "Mi equipo prioriza mantener el software desplegable por encima de trabajar en nuevas funcionalidades.",
       "Nuestro software se mantiene en un estado desplegable a lo largo de todo su ciclo de vida.",
-      "Podemos desplegar nuestro sistema a producción, o a los usuarios finales, en cualquier momento y bajo demanda.",
-      "Cuando las personas reciben feedback de que el sistema no es desplegable (como builds o tests fallidos), priorizan arreglar esos problemas."
+      "Podemos desplegar nuestro sistema a producción, o a los usuarios finales, en cualquier momento y bajo demanda."
     ]
   },
   {
@@ -58,13 +57,9 @@
     "source": "DORA Research 2022 — Documentation",
     "statements": [
       "Puedo confiar en nuestra documentación técnica cuando necesito usar o trabajar con los servicios o aplicaciones en los que trabajo.",
-      "Es fácil para mí entender nuestra documentación técnica.",
       "Es fácil encontrar el documento técnico correcto cuando necesito entender algo sobre los servicios o aplicaciones en los que trabajo.",
-      "La mayor parte del código de los servicios o aplicaciones con los que trabajo está documentado.",
-      "Nuestra documentación técnica está bien organizada.",
       "La documentación técnica se actualiza cuando se realizan cambios.",
-      "La documentación técnica refleja correctamente las capacidades y requisitos del servicio o aplicación principal en el que trabajo.",
-      "Cuando hay un incidente o problema que requiere troubleshooting, recurro a la documentación."
+      "La documentación técnica refleja correctamente las capacidades y requisitos del servicio o aplicación principal en el que trabajo."
     ]
   },
   {
@@ -95,10 +90,8 @@
     "statements": [
       "La colaboración entre funciones (cross-functional) es alentada y recompensada.",
       "Los fallos se tratan principalmente como oportunidades para mejorar el sistema.",
-      "La información se busca activamente.",
       "A los mensajeros no se les castiga cuando entregan noticias de fallos u otras malas noticias.",
-      "Las nuevas ideas son bienvenidas.",
-      "Las responsabilidades se comparten."
+      "Las nuevas ideas son bienvenidas."
     ]
   },
   {
@@ -119,8 +112,6 @@
       "Mi equipo puede desplegar y liberar nuestro producto o servicio bajo demanda, de forma independiente de otros servicios de los que dependemos.",
       "En mi equipo, podemos hacer cambios de gran escala en el diseño de nuestro sistema sin crear trabajo significativo para otros equipos.",
       "En mi equipo, podemos hacer cambios de gran escala en el diseño de nuestro sistema sin depender de que otros equipos hagan cambios en sus sistemas.",
-      "En mi equipo, realizamos despliegues durante el horario laboral normal con tiempo de inactividad insignificante.",
-      "Para completar mi propio trabajo, no necesito comunicarme y coordinarme con personas fuera de mi equipo.",
       "Podemos realizar la mayor parte de nuestras pruebas bajo demanda, sin requerir un entorno de pruebas integrado."
     ]
   },
@@ -132,7 +123,6 @@
       "Sé cuál fue la confiabilidad real en el periodo más reciente.",
       "Tiene objetivos de confiabilidad bien definidos (como SLAs/SLOs) que se comunican claramente entre el equipo y a los clientes.",
       "Mi equipo revisa y ajusta regularmente los objetivos de confiabilidad basándose en evidencia.",
-      "Se realizan revisiones de confiabilidad durante todo el proceso de desarrollo para todas las funcionalidades principales de las aplicaciones en las que trabajo.",
       "Cuando no cumplimos nuestros objetivos de confiabilidad, realizamos trabajo de mejora y/o re-priorizamos."
     ]
   },
@@ -143,9 +133,7 @@
     "statements": [
       "En mi empresa, el protocolo de seguridad de software está integrado de forma transparente en nuestro proceso de desarrollo.",
       "En mi empresa, tenemos un proceso estandarizado para abordar la seguridad de software en todos los proyectos.",
-      "Tengo acceso a las herramientas necesarias para ejecutar pruebas de seguridad.",
       "Se realiza revisión de seguridad para todas las funcionalidades principales de las aplicaciones en las que trabajo.",
-      "Los roles de seguridad están integrados en nuestro equipo de desarrollo de software.",
       "Las pruebas de seguridad se ejecutan temprano en el proceso de desarrollo de software, ya sea por mí o por otro equipo."
     ]
   },
@@ -167,8 +155,6 @@
       "Los fallos en tests automatizados suelen indicar un defecto real.",
       "Puedo obtener feedback de los tests automatizados en menos de diez minutos.",
       "Es fácil para los desarrolladores reproducir fallos de tests.",
-      "Tenemos los datos de prueba necesarios para ejecutar nuestros tests automatizados fácilmente en cada etapa.",
-      "Cuando las personas reciben feedback de que el sistema no es desplegable (como builds o tests fallidos), priorizan arreglar esos problemas.",
       "Cuando los tests automatizados pasan, confío en que el software es desplegable."
     ]
   },

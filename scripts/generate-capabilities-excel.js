@@ -8,16 +8,16 @@ const ExcelJS = require("exceljs");
 const path = require("path");
 
 const APPLICATIONS = [
-  "Portal Web Corporativo",
-  "App Mobile Banking",
-  "API Gateway Pagos",
-  "Sistema CRM Clientes",
-  "Plataforma E-commerce",
-  "Microservicio Autenticación",
-  "Dashboard Analytics",
-  "Sistema Core Transaccional",
-  "App Interna RRHH",
-  "Servicio Notificaciones",
+  "Mi App Auna",
+  "Aunados",
+  "Aunados - Facturación",
+  "Aunados – Hospitalización",
+  "Aunados – Devoluciones",
+  "Ecommerce Salud",
+  "Teleconsultas",
+  "Membresías Perú",
+  "Auna.org",
+  "Laboratorio B2B",
 ];
 
 const LIKERT_OPTIONS = [

@@ -1,21 +1,32 @@
 const APPLICATIONS = [
-  { id: "portal-web", name: "Portal Web Corporativo" },
-  { id: "app-mobile-banking", name: "App Mobile Banking" },
-  { id: "api-pagos", name: "API Gateway Pagos" },
-  { id: "crm-clientes", name: "Sistema CRM Clientes" },
-  { id: "ecommerce", name: "Plataforma E-commerce" },
-  { id: "auth-service", name: "Microservicio Autenticación" },
-  { id: "analytics", name: "Dashboard Analytics" },
-  { id: "core-transaccional", name: "Sistema Core Transaccional" },
-  { id: "app-rrhh", name: "App Interna RRHH" },
-  { id: "notificaciones", name: "Servicio Notificaciones" },
+  { id: "mi-app-auna", name: "Mi App Auna" },
+  { id: "aunados", name: "Aunados" },
+  { id: "aunados-facturacion", name: "Aunados - Facturación" },
+  { id: "aunados-hospitalizacion", name: "Aunados – Hospitalización" },
+  { id: "aunados-devoluciones", name: "Aunados – Devoluciones" },
+  { id: "ecommerce-salud", name: "Ecommerce Salud" },
+  { id: "teleconsultas", name: "Teleconsultas" },
+  { id: "membresias-peru", name: "Membresías Perú" },
+  { id: "auna-org", name: "Auna.org" },
+  { id: "laboratorio-b2b", name: "Laboratorio B2B" },
 ];
 
-function renderParticipantBlock() {
-  const appOptions = APPLICATIONS.map(
+function applicationOptionsHtml() {
+  return APPLICATIONS.map(
     (app) => `<option value="${app.id}">${app.name}</option>`
   ).join("");
+}
 
+function populateApplicationSelect(selectId = "application-select") {
+  const select = document.getElementById(selectId);
+  if (!select) return;
+  select.innerHTML = `
+    <option value="">— Selecciona una aplicación —</option>
+    ${applicationOptionsHtml()}
+  `;
+}
+
+function renderParticipantBlock() {
   return `
     <section class="participant-block" data-section="participant">
       <h2>Datos del evaluador</h2>
@@ -29,7 +40,7 @@ function renderParticipantBlock() {
           <label for="application-select">Aplicación / Servicio</label>
           <select id="application-select" name="application" required>
             <option value="">— Selecciona una aplicación —</option>
-            ${appOptions}
+            ${applicationOptionsHtml()}
           </select>
         </div>
       </div>
